@@ -1,0 +1,3 @@
+Konkatenacja stringów jest nieefektywna również pod względem zużycia pamięci, ponieważ każde połączenie dwóch stringów powoduje utworzenie nowego obiektu string, który zajmuje dodatkową przestrzeń w pamięci. W rezultacie, wiele niepotrzebnych obiektów string może zajmować dużo miejsca w pamięci.
+
+StringBuilder jest bardziej efektywny pod względem zużycia pamięci, ponieważ jego implementacja pozwala na dynamiczne dodawanie fragmentów tekstu do jednego obiektu bez tworzenia nowych obiektów string. W rezultacie, użycie StringBuilder może zaoszczędzić dużo miejsca w pamięci w porównaniu z konkatenacją stringów.
