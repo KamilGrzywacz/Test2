@@ -2,16 +2,11 @@ package pl.kurs.task1.model;
 
 public class Circle extends Figure {
     private double radius;
-    private double diameter;
 
-    private double area;
-    private double perimeter;
 
     public Circle(int radius) {
         this.radius = radius;
-        this.diameter = radius + radius;
-        this.perimeter = 2 * 3.14 * radius;
-        this.area = 3.14 * radius * radius;
+
     }
 
     @Override
@@ -21,12 +16,15 @@ public class Circle extends Figure {
 
     }
 
-    public double getArea() {
-        return area;
+
+    @Override
+    public double areaCalculator() {
+        return Math.PI * radius * radius;
     }
 
-    public double getPerimeter() {
-        return perimeter;
+    @Override
+    public double perimeterCalculator() {
+        return 2 * Math.PI * radius;
     }
 
     @Override

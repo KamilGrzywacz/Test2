@@ -2,14 +2,11 @@ package pl.kurs.task1.model;
 
 public class Square extends Figure {
     private double gon;
-    private double area;
-    private double perimeter;
 
 
     public Square(int gon) {
         this.gon = gon;
-        this.area = gon * gon;
-        this.perimeter = 4 * gon;
+
     }
 
     @Override
@@ -17,12 +14,15 @@ public class Square extends Figure {
         return "Kwadrat o boku " + gon;
     }
 
-    public double getArea() {
-        return area;
+
+    @Override
+    public double areaCalculator() {
+        return gon * gon;
     }
 
-    public double getPerimeter() {
-        return perimeter;
+    @Override
+    public double perimeterCalculator() {
+        return 4 * gon;
     }
 
     public boolean equals(Object obj) {

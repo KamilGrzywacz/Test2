@@ -9,7 +9,7 @@ public abstract class Figure {
         if (gon > 0) {
             return new Square(gon);
         }
-        throw  new InvalidFigureParameterException("Bok nie może byc mniejszy od 0!");
+        throw new InvalidFigureParameterException("Bok nie może byc mniejszy od 0!");
     }
 
     public static Circle makeCircle(int radius) throws InvalidFigureParameterException {
@@ -30,17 +30,13 @@ public abstract class Figure {
 
     @Override
     public String toString() {
-        return "Figure  {}";
+        return  "Figure  {}";
     }
 
-    public double getArea() {
-        return 0;
-    }
 
-    public double getPerimeter() {
-        return 0;
-    }
+    public abstract double areaCalculator();
 
+    public abstract double perimeterCalculator();
 
     @Override
     public boolean equals(Object obj) {

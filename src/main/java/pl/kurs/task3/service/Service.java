@@ -17,19 +17,7 @@ public class Service {
     public static double getPlec(Person[] people) {
         double womenInArray = 0;
         for (int i = 0; i < people.length; i++) {
-            if (people[i].getPesel().charAt(9) == '0') {
-                womenInArray++;
-            }
-            if (people[i].getPesel().charAt(9) == '2') {
-                womenInArray++;
-            }
-            if (people[i].getPesel().charAt(9) == '4') {
-                womenInArray++;
-            }
-            if (people[i].getPesel().charAt(9) == '6') {
-                womenInArray++;
-            }
-            if (people[i].getPesel().charAt(9) == '8') {
+            if (people[i].getPesel().charAt(9) == '0' || people[i].getPesel().charAt(9) == '2' || people[i].getPesel().charAt(9) == '4' || people[i].getPesel().charAt(9) == '6' || people[i].getPesel().charAt(9) == '8') {
                 womenInArray++;
             }
         }

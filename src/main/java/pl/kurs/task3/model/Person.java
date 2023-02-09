@@ -1,6 +1,6 @@
 package pl.kurs.task3.model;
 
-public class Person {
+public abstract class Person {
     private String name;
     private String lastName;
     private String pesel;
@@ -13,9 +13,7 @@ public class Person {
         this.city = city;
     }
 
-    public double getIncome() {
-        return 0;
-    }
+    public abstract double getIncome();
 
     public String getPesel() {
         return pesel;
